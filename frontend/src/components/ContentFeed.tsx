@@ -198,7 +198,7 @@ const ContentFeed: React.FC = () => {
           onClick={() => refetch()}
           className="px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium transition-colors duration-200"
         >
-          Load More Content
+          Load More Contentt
         </button>
       </div>
     </div>
