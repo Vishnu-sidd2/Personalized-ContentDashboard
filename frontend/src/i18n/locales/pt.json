@@ -1,0 +1,160 @@
+{
+  "dashboard": {
+    "title": "Hub de Conteúdo",
+    "subtitle": "Seu painel personalizado",
+    "feed": "Feed",
+    "trending": "Tendências",
+    "favorites": "Favoritos",
+    "settings": "Configurações"
+  },
+  "nav": {
+    "feed": {
+      "title": "Feed",
+      "description": "Conteúdo personalizado"
+    },
+    "trending": {
+      "title": "Tendências",
+      "description": "Popular agora"
+    },
+    "favorites": {
+      "title": "Favoritos",
+      "description": "Conteúdo salvo"
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Preferências e mais"
+    }
+  },
+  "search": {
+    "placeholder": "Pesquisar em notícias, filmes e posts sociais...",
+    "recentSearches": "Pesquisas Recentes",
+    "noResults": "Nenhum conteúdo encontrado para sua pesquisa.",
+    "tryAdjusting": "Tente ajustar seus termos de pesquisa ou verifique suas preferências."
+  },
+  "content": {
+    "personalizedFeed": "Seu Feed Personalizado",
+    "searchResults": "Resultados da pesquisa para \"{{term}}\"",
+    "items": "{{count}} itens",
+    "dragToReorder": "Arraste para reordenar",
+    "refresh": "Atualizar",
+    "loadMore": "Carregar Mais Conteúdo",
+    "readMore": "Ler Mais",
+    "watchTrailer": "Assistir Trailer",
+    "noContent": "Nenhum conteúdo disponível."
+  },
+  "trending": {
+    "title": "Tendências Agora",
+    "subtitle": "Descubra o que está em alta agora em notícias, entretenimento e mídias sociais",
+    "breakingNews": "Últimas Notícias",
+    "latestUpdates": "Últimas atualizações",
+    "hotStories": "Histórias quentes",
+    "mustWatch": "Imperdível",
+    "popularMovies": "Filmes populares",
+    "recommendations": "Recomendações",
+    "viralPosts": "Posts Virais",
+    "socialBuzz": "Buzz social",
+    "trendingPosts": "Posts em tendência",
+    "loadMoreTrending": "Carregar Mais Tendências"
+  },
+  "favorites": {
+    "title": "Seus Favoritos",
+    "subtitle": "{{count}} item{{count_other}} salvo{{count_other}} que você pode revisitar a qualquer momento",
+    "noFavorites": "Nenhum Favorito Ainda",
+    "noFavoritesDesc": "Comece a explorar conteúdo e marque itens como favoritos para vê-los aqui.",
+    "clickHeart": "Clique no ícone do coração em qualquer cartão de conteúdo",
+    "saveContent": "Salve artigos, filmes e posts que você ama",
+    "buildCollection": "Construa sua coleção pessoal",
+    "newsArticles": "Artigos de Notícias",
+    "savedStories": "Histórias salvas",
+    "movies": "Filmes",
+    "watchlist": "Lista de assistir",
+    "socialPosts": "Posts Sociais",
+    "likedPosts": "Posts curtidos",
+    "all": "Todos ({{count}})",
+    "news": "Notícias ({{count}})",
+    "moviesCount": "Filmes ({{count}})",
+    "social": "Social ({{count}})"
+  },
+  "settings": {
+    "title": "Configurações",
+    "preferences": "Preferências",
+    "account": "Conta",
+    "notifications": "Notificações",
+    "appearance": "Aparência",
+    "darkMode": "Modo Escuro",
+    "darkThemeEnabled": "Tema escuro habilitado",
+    "lightThemeEnabled": "Tema claro habilitado",
+    "language": "Idioma",
+    "contentCategories": "Categorias de Conteúdo",
+    "categoriesDesc": "Selecione categorias do seu interesse para personalizar seu feed",
+    "selected": "Selecionado ({{count}})",
+    "availableCategories": "Categorias Disponíveis",
+    "addCustomCategory": "Adicionar categoria personalizada...",
+    "cancel": "Cancelar",
+    "save": "Salvar"
+  },
+  "auth": {
+    "signIn": "Entrar",
+    "signUp": "Cadastrar",
+    "signOut": "Sair",
+    "email": "Email",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "firstName": "Nome",
+    "lastName": "Sobrenome",
+    "welcomeBack": "Bem-vindo de volta!",
+    "createAccount": "Crie sua conta",
+    "alreadyHaveAccount": "Já tem uma conta?",
+    "dontHaveAccount": "Não tem uma conta?",
+    "forgotPassword": "Esqueceu a senha?",
+    "resetPassword": "Redefinir Senha",
+    "profile": "Perfil",
+    "editProfile": "Editar Perfil",
+    "updateProfile": "Atualizar Perfil",
+    "profileUpdated": "Perfil atualizado com sucesso!",
+    "invalidCredentials": "Credenciais inválidas",
+    "emailRequired": "Email é obrigatório",
+    "passwordRequired": "Senha é obrigatória",
+    "passwordsNotMatch": "Senhas não coincidem"
+  },
+  "realtime": {
+    "connected": "Conectado",
+    "disconnected": "Desconectado",
+    "connecting": "Conectando...",
+    "newContent": "Novo conteúdo disponível",
+    "refresh": "Atualizar para ver atualizações",
+    "liveUpdates": "Atualizações ao vivo",
+    "lastUpdated": "Última atualização: {{time}}"
+  },
+  "categories": {
+    "technology": "Tecnologia",
+    "business": "Negócios",
+    "entertainment": "Entretenimento",
+    "sports": "Esportes",
+    "health": "Saúde",
+    "science": "Ciência",
+    "politics": "Política",
+    "travel": "Viagem",
+    "food": "Comida",
+    "fashion": "Moda",
+    "gaming": "Games",
+    "music": "Música",
+    "art": "Arte",
+    "education": "Educação",
+    "finance": "Finanças"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "retry": "Tentar Novamente",
+    "close": "Fechar",
+    "open": "Abrir",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "share": "Compartilhar",
+    "like": "Curtir",
+    "unlike": "Descurtir",
+    "favorite": "Favorito",
+    "unfavorite": "Remover dos favoritos"
+  }
+}

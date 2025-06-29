@@ -1,0 +1,160 @@
+{
+  "dashboard": {
+    "title": "Content Hub",
+    "subtitle": "Ihr personalisiertes Dashboard",
+    "feed": "Feed",
+    "trending": "Trending",
+    "favorites": "Favoriten",
+    "settings": "Einstellungen"
+  },
+  "nav": {
+    "feed": {
+      "title": "Feed",
+      "description": "Personalisierte Inhalte"
+    },
+    "trending": {
+      "title": "Trending",
+      "description": "Jetzt beliebt"
+    },
+    "favorites": {
+      "title": "Favoriten",
+      "description": "Gespeicherte Inhalte"
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "description": "Präferenzen & mehr"
+    }
+  },
+  "search": {
+    "placeholder": "Durchsuchen Sie Nachrichten, Filme und Social Media Posts...",
+    "recentSearches": "Letzte Suchanfragen",
+    "noResults": "Kein Inhalt für Ihre Suche gefunden.",
+    "tryAdjusting": "Versuchen Sie, Ihre Suchbegriffe anzupassen oder überprüfen Sie Ihre Einstellungen."
+  },
+  "content": {
+    "personalizedFeed": "Ihr Personalisierter Feed",
+    "searchResults": "Suchergebnisse für \"{{term}}\"",
+    "items": "{{count}} Elemente",
+    "dragToReorder": "Ziehen zum Neu ordnen",
+    "refresh": "Aktualisieren",
+    "loadMore": "Mehr Inhalte Laden",
+    "readMore": "Mehr Lesen",
+    "watchTrailer": "Trailer Ansehen",
+    "noContent": "Kein Inhalt verfügbar."
+  },
+  "trending": {
+    "title": "Jetzt Trending",
+    "subtitle": "Entdecken Sie, was gerade bei Nachrichten, Unterhaltung und Social Media angesagt ist",
+    "breakingNews": "Eilmeldungen",
+    "latestUpdates": "Neueste Updates",
+    "hotStories": "Heiße Geschichten",
+    "mustWatch": "Muss man gesehen haben",
+    "popularMovies": "Beliebte Filme",
+    "recommendations": "Empfehlungen",
+    "viralPosts": "Virale Posts",
+    "socialBuzz": "Social Buzz",
+    "trendingPosts": "Trending Posts",
+    "loadMoreTrending": "Mehr Trending Laden"
+  },
+  "favorites": {
+    "title": "Ihre Favoriten",
+    "subtitle": "{{count}} gespeicherte{{count_other}} Element{{count_other}}, die Sie jederzeit wieder besuchen können",
+    "noFavorites": "Noch Keine Favoriten",
+    "noFavoritesDesc": "Beginnen Sie mit der Erkundung von Inhalten und markieren Sie Elemente als Favoriten, um sie hier zu sehen.",
+    "clickHeart": "Klicken Sie auf das Herz-Symbol auf jeder Inhaltskarte",
+    "saveContent": "Speichern Sie Artikel, Filme und Posts, die Sie lieben",
+    "buildCollection": "Bauen Sie Ihre persönliche Sammlung auf",
+    "newsArticles": "Nachrichtenartikel",
+    "savedStories": "Gespeicherte Geschichten",
+    "movies": "Filme",
+    "watchlist": "Watchlist",
+    "socialPosts": "Social Media Posts",
+    "likedPosts": "Gelikte Posts",
+    "all": "Alle ({{count}})",
+    "news": "Nachrichten ({{count}})",
+    "moviesCount": "Filme ({{count}})",
+    "social": "Social ({{count}})"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "preferences": "Präferenzen",
+    "account": "Konto",
+    "notifications": "Benachrichtigungen",
+    "appearance": "Erscheinungsbild",
+    "darkMode": "Dunkler Modus",
+    "darkThemeEnabled": "Dunkles Theme aktiviert",
+    "lightThemeEnabled": "Helles Theme aktiviert",
+    "language": "Sprache",
+    "contentCategories": "Inhaltskategorien",
+    "categoriesDesc": "Wählen Sie Kategorien aus, die Sie interessieren, um Ihren Feed zu personalisieren",
+    "selected": "Ausgewählt ({{count}})",
+    "availableCategories": "Verfügbare Kategorien",
+    "addCustomCategory": "Benutzerdefinierte Kategorie hinzufügen...",
+    "cancel": "Abbrechen",
+    "save": "Speichern"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort Bestätigen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "welcomeBack": "Willkommen zurück!",
+    "createAccount": "Erstellen Sie Ihr Konto",
+    "alreadyHaveAccount": "Haben Sie bereits ein Konto?",
+    "dontHaveAccount": "Haben Sie noch kein Konto?",
+    "forgotPassword": "Passwort vergessen?",
+    "resetPassword": "Passwort Zurücksetzen",
+    "profile": "Profil",
+    "editProfile": "Profil Bearbeiten",
+    "updateProfile": "Profil Aktualisieren",
+    "profileUpdated": "Profil erfolgreich aktualisiert!",
+    "invalidCredentials": "Ungültige Anmeldedaten",
+    "emailRequired": "E-Mail ist erforderlich",
+    "passwordRequired": "Passwort ist erforderlich",
+    "passwordsNotMatch": "Passwörter stimmen nicht überein"
+  },
+  "realtime": {
+    "connected": "Verbunden",
+    "disconnected": "Getrennt",
+    "connecting": "Verbindung...",
+    "newContent": "Neue Inhalte verfügbar",
+    "refresh": "Aktualisieren, um Updates zu sehen",
+    "liveUpdates": "Live-Updates",
+    "lastUpdated": "Zuletzt aktualisiert: {{time}}"
+  },
+  "categories": {
+    "technology": "Technologie",
+    "business": "Geschäft",
+    "entertainment": "Unterhaltung",
+    "sports": "Sport",
+    "health": "Gesundheit",
+    "science": "Wissenschaft",
+    "politics": "Politik",
+    "travel": "Reisen",
+    "food": "Essen",
+    "fashion": "Mode",
+    "gaming": "Gaming",
+    "music": "Musik",
+    "art": "Kunst",
+    "education": "Bildung",
+    "finance": "Finanzen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "retry": "Nochmal Versuchen",
+    "close": "Schließen",
+    "open": "Öffnen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "share": "Teilen",
+    "like": "Gefällt mir",
+    "unlike": "Gefällt mir nicht mehr",
+    "favorite": "Favorit",
+    "unfavorite": "Aus Favoriten entfernen"
+  }
+}

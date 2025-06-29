@@ -1,0 +1,160 @@
+{
+  "dashboard": {
+    "title": "Content Hub",
+    "subtitle": "Your personalized dashboard",
+    "feed": "Feed",
+    "trending": "Trending",
+    "favorites": "Favorites",
+    "settings": "Settings"
+  },
+  "nav": {
+    "feed": {
+      "title": "Feed",
+      "description": "Personalized content"
+    },
+    "trending": {
+      "title": "Trending",
+      "description": "Popular now"
+    },
+    "favorites": {
+      "title": "Favorites",
+      "description": "Saved content"
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Preferences & more"
+    }
+  },
+  "search": {
+    "placeholder": "Search across news, movies, and social posts...",
+    "recentSearches": "Recent Searches",
+    "noResults": "No content found for your search.",
+    "tryAdjusting": "Try adjusting your search terms or check your preferences."
+  },
+  "content": {
+    "personalizedFeed": "Your Personalized Feed",
+    "searchResults": "Search Results for \"{{term}}\"",
+    "items": "{{count}} items",
+    "dragToReorder": "Drag to reorder",
+    "refresh": "Refresh",
+    "loadMore": "Load More Content",
+    "readMore": "Read More",
+    "watchTrailer": "Watch Trailer",
+    "noContent": "No content available."
+  },
+  "trending": {
+    "title": "Trending Now",
+    "subtitle": "Discover what's hot right now across news, entertainment, and social media",
+    "breakingNews": "Breaking News",
+    "latestUpdates": "Latest updates",
+    "hotStories": "Hot stories",
+    "mustWatch": "Must Watch",
+    "popularMovies": "Popular movies",
+    "recommendations": "Recommendations",
+    "viralPosts": "Viral Posts",
+    "socialBuzz": "Social buzz",
+    "trendingPosts": "Trending posts",
+    "loadMoreTrending": "Load More Trending"
+  },
+  "favorites": {
+    "title": "Your Favorites",
+    "subtitle": "{{count}} saved item{{count_other}} you can revisit anytime",
+    "noFavorites": "No Favorites Yet",
+    "noFavoritesDesc": "Start exploring content and mark items as favorites to see them here.",
+    "clickHeart": "Click the heart icon on any content card",
+    "saveContent": "Save articles, movies, and posts you love",
+    "buildCollection": "Build your personal collection",
+    "newsArticles": "News Articles",
+    "savedStories": "Saved stories",
+    "movies": "Movies",
+    "watchlist": "Watchlist",
+    "socialPosts": "Social Posts",
+    "likedPosts": "Liked posts",
+    "all": "All ({{count}})",
+    "news": "News ({{count}})",
+    "moviesCount": "Movies ({{count}})",
+    "social": "Social ({{count}})"
+  },
+  "settings": {
+    "title": "Settings",
+    "preferences": "Preferences",
+    "account": "Account",
+    "notifications": "Notifications",
+    "appearance": "Appearance",
+    "darkMode": "Dark Mode",
+    "darkThemeEnabled": "Dark theme enabled",
+    "lightThemeEnabled": "Light theme enabled",
+    "language": "Language",
+    "contentCategories": "Content Categories",
+    "categoriesDesc": "Select categories you're interested in to personalize your feed",
+    "selected": "Selected ({{count}})",
+    "availableCategories": "Available Categories",
+    "addCustomCategory": "Add custom category...",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "welcomeBack": "Welcome back!",
+    "createAccount": "Create your account",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset Password",
+    "profile": "Profile",
+    "editProfile": "Edit Profile",
+    "updateProfile": "Update Profile",
+    "profileUpdated": "Profile updated successfully!",
+    "invalidCredentials": "Invalid credentials",
+    "emailRequired": "Email is required",
+    "passwordRequired": "Password is required",
+    "passwordsNotMatch": "Passwords do not match"
+  },
+  "realtime": {
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "connecting": "Connecting...",
+    "newContent": "New content available",
+    "refresh": "Refresh to see updates",
+    "liveUpdates": "Live updates",
+    "lastUpdated": "Last updated: {{time}}"
+  },
+  "categories": {
+    "technology": "Technology",
+    "business": "Business",
+    "entertainment": "Entertainment",
+    "sports": "Sports",
+    "health": "Health",
+    "science": "Science",
+    "politics": "Politics",
+    "travel": "Travel",
+    "food": "Food",
+    "fashion": "Fashion",
+    "gaming": "Gaming",
+    "music": "Music",
+    "art": "Art",
+    "education": "Education",
+    "finance": "Finance"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Try Again",
+    "close": "Close",
+    "open": "Open",
+    "edit": "Edit",
+    "delete": "Delete",
+    "share": "Share",
+    "like": "Like",
+    "unlike": "Unlike",
+    "favorite": "Favorite",
+    "unfavorite": "Unfavorite"
+  }
+}
