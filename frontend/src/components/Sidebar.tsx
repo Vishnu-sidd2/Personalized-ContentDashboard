@@ -94,12 +94,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
             <User className="w-4 h-4 text-white" />
           </div>
-          <div>
-            <div className="font-medium text-gray-800 dark:text-white text-sm">Demo User</div>
-            <div className="text-xs text-gray-500 dark:text-gray-400">
-              demo@example.com
-            </div>
-          </div>
         </div>
       </div>
     </motion.div>
