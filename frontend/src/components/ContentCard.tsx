@@ -115,7 +115,7 @@ const ContentCard: React.FC<ContentCardProps> = ({ id, type, data }) => {
           </button>
           <button
             onClick={handleShare}
-            className="p-2 rounded-full text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+            className="p-2 rounded-ful text-gray-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
           >
             <Share2 className="w-4 h-4" />
           </button>
