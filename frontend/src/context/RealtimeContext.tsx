@@ -40,35 +40,26 @@ export const RealtimeProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   });
 
   useEffect(() => {
-    // Initialize socket connection
-    const initializeSocket = () => {
-      setState(prev => ({ ...prev, connectionStatus: 'connecting' }));
-      
-      // Since we don't have a real WebSocket server, we'll simulate real-time updates
-      simulateRealtimeUpdates();
-    };
+    let updateInterval: NodeJS.Timeout;
 
     const simulateRealtimeUpdates = () => {
-      // Simulate connection
-      setState(prev => ({ 
-        ...prev, 
-        isConnected: true, 
+      setState(prev => ({
+        ...prev,
+        isConnected: true,
         connectionStatus: 'connected',
-        lastUpdate: new Date()
+        lastUpdate: new Date(),
       }));
 
-      // Simulate periodic content updates
-      const updateInterval = setInterval(() => {
-        const shouldUpdate = Math.random() > 0.7; // 30% chance of new content
-        
+      updateInterval = setInterval(() => {
+        const shouldUpdate = Math.random() > 0.7;
+
         if (shouldUpdate) {
           setState(prev => ({
             ...prev,
             newContentCount: prev.newContentCount + Math.floor(Math.random() * 3) + 1,
-            lastUpdate: new Date()
+            lastUpdate: new Date(),
           }));
 
-          // Show notification for new content
           toast.info(t('realtime.newContent'), {
             position: 'top-right',
             autoClose: 5000,
@@ -78,18 +69,14 @@ export const RealtimeProvider: React.FC<{ children: React.ReactNode }> = ({ chil
             draggable: true,
           });
         }
-      }, 30000); // Check every 30 seconds
-
-      // Cleanup function
-      return () => {
-        clearInterval(updateInterval);
-      };
+      }, 30000);
     };
 
-    const cleanup = initializeSocket();
+    setState(prev => ({ ...prev, connectionStatus: 'connecting' }));
+    simulateRealtimeUpdates();
 
     return () => {
-      if (cleanup) cleanup();
+      clearInterval(updateInterval);
       if (socketRef.current) {
         socketRef.current.disconnect();
       }
@@ -97,22 +84,19 @@ export const RealtimeProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [t]);
 
   const refreshContent = () => {
-    // Invalidate all content queries to trigger refetch
     dispatch(contentApi.util.invalidateTags(['Content']));
-    
     setState(prev => ({
       ...prev,
       newContentCount: 0,
-      lastUpdate: new Date()
+      lastUpdate: new Date(),
     }));
-
     toast.success(t('content.refresh'));
   };
 
   const markContentAsRead = () => {
     setState(prev => ({
       ...prev,
-      newContentCount: 0
+      newContentCount: 0,
     }));
   };
 

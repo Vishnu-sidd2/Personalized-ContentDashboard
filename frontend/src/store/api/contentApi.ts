@@ -120,47 +120,49 @@ export const contentApi = createApi({
   tagTypes: ['Content'],
   endpoints: (builder) => ({
     getPersonalizedContent: builder.query<ContentResponse, { categories: string[]; searchTerm?: string }>({
-      queryFn: async ({ categories, searchTerm = '' }) => {
-        // Simulate API delay
-        await new Promise(resolve => setTimeout(resolve, 500));
-        
-        const news = generateMockNews(categories.length > 0 ? categories : ['technology', 'business']);
-        const movies = generateMockMovies();
-        const social = generateMockSocial();
-        
-        // Filter by search term if provided
-        const filteredNews = searchTerm 
-          ? news.filter(article => 
-              article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              article.description.toLowerCase().includes(searchTerm.toLowerCase())
-            )
-          : news;
-          
-        const filteredMovies = searchTerm
-          ? movies.filter(movie =>
-              movie.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              movie.overview.toLowerCase().includes(searchTerm.toLowerCase())
-            )
-          : movies;
-          
-        const filteredSocial = searchTerm
-          ? social.filter(post =>
-              post.content.toLowerCase().includes(searchTerm.toLowerCase()) ||
-              post.hashtags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()))
-            )
-          : social;
-        
-        return {
-          data: {
-            news: filteredNews,
-            movies: filteredMovies,
-            social: filteredSocial
-          }
-        };
-      },
-      providesTags: ['Content'],
-    }),
-    getTrendingContent: builder.query<ContentResponse, void>({
+  queryFn: async ({ categories, searchTerm = '' }) => {
+    const apiKey = process.env.REACT_APP_NEWS_API_KEY;
+    const category = categories.length > 0 ? categories[0] : 'technology';
+
+    try {
+      const response = await fetch(
+        `https://newsapi.org/v2/top-headlines?category=${category}&q=${encodeURIComponent(searchTerm)}&pageSize=100&country=us&apiKey=${apiKey}`
+      );
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch news');
+      }
+
+      const data = await response.json();
+
+      const news: NewsArticle[] = data.articles.map((article: any, index: number) => ({
+        id: `live-news-${index}`,
+        title: article.title,
+        description: article.description || '',
+        content: article.content || '',
+        url: article.url,
+        urlToImage: article.urlToImage,
+        publishedAt: article.publishedAt,
+        source: {
+          id: article.source?.id || '',
+          name: article.source?.name || ''
+        },
+        category: category
+      }));
+
+      return {
+        data: {
+          news,
+          movies: [],   // optional: you can keep mock movies or make real API later
+          social: []    // same for social
+        }
+      };
+    } catch (error) {
+      return { error: { status: 500, data: error } };
+    }
+  },
+  providesTags: ['Content'],
+}), getTrendingContent: builder.query<ContentResponse, void>({
       queryFn: async () => {
         await new Promise(resolve => setTimeout(resolve, 300));
         

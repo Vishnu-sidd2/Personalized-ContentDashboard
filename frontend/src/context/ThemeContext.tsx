@@ -22,11 +22,17 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const isDarkMode = useSelector((state: RootState) => state.userPreferences.darkMode);
   const dispatch = useDispatch();
 
+  // Sync dark mode with HTML and localStorage
   useEffect(() => {
+    const root = document.documentElement;
+    const className = 'dark';
+
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+      root.classList.add(className);
+      localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      root.classList.remove(className);
+      localStorage.setItem('theme', 'light');
     }
   }, [isDarkMode]);
 

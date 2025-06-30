@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
@@ -11,8 +11,16 @@ import { RealtimeProvider } from './context/RealtimeContext';
 import './i18n/i18n';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
+import Beams from './components/Beams';
+import { ErrorBoundary } from './components/ErrorBoundary'
 
-function App() {
+const App: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <Provider store={store}>
       <AuthProvider>
@@ -20,7 +28,11 @@ function App() {
           <RealtimeProvider>
             <DndProvider backend={HTML5Backend}>
               <div className="App">
+                {/* 3D Canvas Background */}
+                
+
                 <Dashboard />
+
                 <ToastContainer
                   position="top-right"
                   autoClose={3000}
@@ -40,6 +52,6 @@ function App() {
       </AuthProvider>
     </Provider>
   );
-}
+};
 
 export default App;

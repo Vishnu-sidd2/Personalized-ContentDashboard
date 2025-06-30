@@ -9,10 +9,12 @@ import {
   User
 } from 'lucide-react';
 
-interface SidebarProps {
+export interface SidebarProps {
   activeSection: 'feed' | 'trending' | 'favorites';
   onSectionChange: (section: 'feed' | 'trending' | 'favorites') => void;
   onSettingsClick: () => void;
+  onAuthClick: (mode?: 'login' | 'signup') => void;
+  onProfileClick: () => void;
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ 
@@ -93,6 +95,12 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="flex items-center px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-700">
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
             <User className="w-4 h-4 text-white" />
+          </div>
+          <div>
+            <div className="font-medium text-gray-800 dark:text-white text-sm">Demo User</div>
+            <div className="text-xs text-gray-500 dark:text-gray-400">
+              demo@example.com
+            </div>
           </div>
         </div>
       </div>
